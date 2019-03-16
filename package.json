@@ -1,0 +1,116 @@
+{
+    "name": "raven",
+    "version": "1.0.0",
+    "description": "Raven is a modular server that reduce the cost of developpement.",
+    "main": "raven.js",
+    "dependencies": {
+        "assert-plus": "^1.0.0",
+        "aws-sign2": "^0.7.0",
+        "aws4": "^1.8.0",
+        "bcrypt": "^3.0.4",
+        "caseless": "^0.12.0",
+        "cookie-parser": "^1.4.3",
+        "cookies-parser": "^1.2.0",
+        "ejs": "^2.6.1",
+        "event": "^1.0.0",
+        "express": "^4.16.3",
+        "express-remove-route": "^1.0.0",
+        "extend": "^3.0.2",
+        "facebook-chat-api": "^1.6.1",
+        "forever-agent": "^0.6.1",
+        "form-data": "^2.3.3",
+        "fs": "0.0.1-security",
+        "gmail-send": "^1.2.14",
+        "har-validator": "^5.1.3",
+        "iplocation": "^6.1.0",
+        "is-typedarray": "^1.0.0",
+        "isstream": "^0.1.2",
+        "json-stringify-safe": "^5.0.1",
+        "jsprim": "^2.0.0",
+        "mysql": "^2.16.0",
+        "node-addon-api": "^1.6.2",
+        "node-gyp": "^3.8.0",
+        "nodemon": "^1.18.10",
+        "oauth-sign": "^0.9.0",
+        "performance-now": "^2.1.0",
+        "randomstring": "^1.1.5",
+        "request": "^2.88.0",
+        "socket.io": "^2.2.0",
+        "tunnel-agent": "^0.6.0",
+        "underscore": "^1.9.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "install": "node raven.js --install",
+        "configure": "node raven.js --configure",
+        "compile": "node raven.js  --compile",
+        "start": "node raven.js --start",
+        "command": "node raven.js --runCommand"
+    },
+    "kernel": {
+        "WebAPI": {
+            "url": [
+                "http://192.168.0.122",
+                "http://www.192.168.0.122"
+            ],
+            "ravenPort": 5000,
+            "clientPort": 5000
+        },
+        "Secure": {
+            "authorisationList": {
+                "BONAPP": 1,
+                "EUREKART": 2,
+                "TANGUY_WEBSITE": 4,
+                "RAVENBOT_USER": 8,
+                "RAVENBOT_ADMIN": 16,
+                "OPTION_5": 32,
+                "OPTION_6": 64,
+                "OPTION_7": 128,
+                "OPTION_8": 256,
+                "OPTION_9": 512,
+                "OPTION_10": 1024,
+                "OPTION_11": 2048,
+                "OPTION_12": 4096,
+                "OPTION_13": 8192,
+                "OPTION_14": 16384,
+                "OPTION_15": 32768,
+                "OPTION_16": 65536,
+                "OPTION_17": 131072,
+                "OPTION_18": 262144,
+                "OPTION_19": 524288,
+                "OPTION_20": 1048576,
+                "OPTION_21": 2097152,
+                "OPTION_22": 4194304,
+                "OPTION_23": 8388608,
+                "OPTION_24": 16777216,
+                "OPTION_25": 33554432,
+                "OPTION_26": 67108864,
+                "OPTION_27": 134217728,
+                "ADD_USER": 268435456,
+                "MESSAGES_AUTHORISATION": 536870912,
+                "ADMIN_AUTHORISATION": 1073741824,
+                "SUPER_ADMIN_AUTHORISATION": 2147483648
+            },
+            "url": "192.168.0.122",
+            "ravenLoginPagePath": "/RavenApp/ravenLogin/",
+            "ravenLoginPageName": "ravenLogin"
+        },
+        "SQL_BDD": {
+            "host": "localhost",
+            "user": "raven",
+            "password": "4VXQgAyhnB$",
+            "database": "raven"
+        },
+        "WebSocket": {
+            "needReadyMessage": true,
+            "readyMessage": "ready"
+        },
+        "Raven": {
+            "version": "Raven v1.0"
+        }
+    },
+    "plugins": {},
+    "author": "Tanguy Hardelin",
+    "license": "ISC"
+}
